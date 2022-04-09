@@ -4,5 +4,6 @@
 docker stop curso_api || true && docker rm curso_api || true
 
 # Run container application
-docker run -itd --name curso_api -p 3000:3000 --restart always --env-file /home/rogermz/wssiscom.env rogermz/curso_service_api:1.0
+#docker run -itd --name curso_api -p 3000:3000 --restart always --env-file /home/rogermz/wscurso.env rogermz/curso_service_api:1.0
+docker run -itd --name curso_api -p 3000:3000 --restart always rogermz/curso_service_api:1.0
 
