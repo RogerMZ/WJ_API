@@ -31,8 +31,8 @@ env'''
     stage('Test') {
       steps {
         sh 'python3 ./test_script/00_test_api.py'
-        sh 'python3 ./test_script/01_test_api.py'
-        sh 'python3 ./test_script/02_test_api.py'
+        sh 'python3 ./test_script/01_get_item.py'
+        sh 'python3 ./test_script/02_get_items.py'
       }
     }
 
