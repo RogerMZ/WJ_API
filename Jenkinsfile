@@ -36,5 +36,11 @@ env'''
       }
     }
 
+    stage('Up image') {
+      steps {
+        sh './publish.sh'
+      }
+    }
+
   }
 }
